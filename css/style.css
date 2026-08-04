@@ -1,3 +1,6 @@
+* {
+  outline: 1px solid red;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap');
 /* ---- Reset ---- */
 * {
@@ -502,5 +505,48 @@ h1, h2, h3 {
 
   .hamburger {
     display: flex;
+  }
+
+  .eligibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-step:not(:last-child) .step-number::after {
+    display: none;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
   }
 }
