@@ -70,6 +70,19 @@
   height: 2.2px;
   background-color: var(--color-dark);
   border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-active .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .hero {
@@ -523,8 +536,10 @@ h1, h2, h3 {
 }
 
 .contact-icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  color: rgb(226, 96, 96);
+  flex-shrink: 0
 }
 
 .contact-item p {

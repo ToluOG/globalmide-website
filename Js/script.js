@@ -3,4 +3,5 @@ const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('nav-open');
+  hamburger.classList.toggle('hamburger-active');
 });
