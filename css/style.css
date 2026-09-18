@@ -601,7 +601,6 @@ h1, h2, h3 {
     display: flex;
   }
 
-
   .eligibility-grid {
     grid-template-columns: 1fr;
   }
