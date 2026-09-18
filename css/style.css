@@ -610,6 +610,9 @@ h1, h2, h3 {
   .hero h1 {
     font-size: 2.2rem;
   }
+  .vm-grid {
+  grid-template-columns: 1fr;
+}
 }
 @media (max-width: 480px) {
   .hero h1 {
