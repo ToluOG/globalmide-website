@@ -601,19 +601,6 @@ h1, h2, h3 {
     display: flex;
   }
 
-  .nav-links.nav-open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: var(--color-cream);
-    padding: 2rem;
-    gap: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
 
   .eligibility-grid {
     grid-template-columns: 1fr;
