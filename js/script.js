@@ -11,3 +11,11 @@ window.addEventListener('resize', () => {
     hamburger.classList.remove('hamburger-active');
   }
 });
+const navLinkItems = document.querySelectorAll('.nav-links a');
+
+navLinkItems.forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('nav-open');
+    hamburger.classList.remove('hamburger-active');
+  });
+});
