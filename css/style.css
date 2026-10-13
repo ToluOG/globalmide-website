@@ -460,7 +460,58 @@ h1, h2, h3 {
   margin-bottom: 3rem;
   color: white;
 }
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
 
+.level-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--color-dark);
+  border-top: 5px solid var(--color-yellow);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.level-card-blue {
+  border-top-color: var(--color-blue);
+}
+
+.level-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.level-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.level-card h2 {
+  font-size: 1.5rem;
+  color: var(--color-blue);
+}
+
+.level-link {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
 .timeline {
   display: flex;
   justify-content: space-between;
@@ -595,6 +646,9 @@ h1, h2, h3 {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+    .level-grid {
+    grid-template-columns: 1fr;
   }
 
   .hamburger {
